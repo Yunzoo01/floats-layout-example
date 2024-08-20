@@ -1,0 +1,62 @@
+<!--about.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Basic Nav Example</title>
+</head>
+<body>
+    <nav>
+        <a href="#">
+            <picture>
+                <!-- SVG version for all scenarios due to scalability and efficiency -->
+                <source srcset="../assets/logo/image.png" type="image/svg+xml" />
+                <!-- High resolution PNG for large screasens -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 1024px)" type="image/png" />
+                <!-- Small PNG for medium screens -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 768px)" type="image/png" />
+                <!-- High resolution JPG for small screens (lower priority than PNG) -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 480px)" type="image/jpg" />
+                <!-- Fallback small JPG for all other scenarios or if none of the above are supported -->
+                <img src="../assets/logo/image.png" alt="ECO company logo">
+            </picture>
+        </a>
+        <span class="spacer"></span>
+        <ul>
+            <li><a href="../index.html" id="current-page">Home</a></li>
+            <li><a href="/pages/about.html" id="current-page">About</a></li>
+            <li><a href="/pages/services.html" id="current-page">Services</a></li>
+            <li id="last-item"><a href="/pages/contact.html" id="current-page">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+
+    
+    <main>
+        <h1>contact page</h1>
+        <div class = textbox>
+
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="main-footer">
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+        <hr class="footer-line">
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+</body>
+</html>

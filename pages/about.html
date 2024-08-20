@@ -1,0 +1,92 @@
+<!--about.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Basic Nav Example</title>
+</head>
+<body>
+    <nav>
+        <a href="#">
+            <picture>
+                <!-- SVG version for all scenarios due to scalability and efficiency -->
+                <source srcset="../assets/logo/image.png" type="image/svg+xml" />
+                <!-- High resolution PNG for large screasens -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 1024px)" type="image/png" />
+                <!-- Small PNG for medium screens -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 768px)" type="image/png" />
+                <!-- High resolution JPG for small screens (lower priority than PNG) -->
+                <source srcset="../assets/logo/image.png" media="(min-width: 480px)" type="image/jpg" />
+                <!-- Fallback small JPG for all other scenarios or if none of the above are supported -->
+                <img src="../assets/logo/image.png" alt="ECO company logo">
+            </picture>
+        </a>
+        <span class="spacer"></span>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/pages/about.html" id="current-page">About</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li id="last-item"><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+
+    
+    <main>
+        <article>
+            <div class="article-picture-left">
+                <picture class="img-adjust">
+                    <img src="../assets/sprout2.png" alt="the sprout1">
+                </picture>
+            </div>
+            <div class="textbox">
+                <h2 class="post-title">Ontario’s strawberry season ‘will probably end early’ given extreme heat</h2>
+                <p class="post-info-right">Published <time datetime="2023-03-04T18:30">June 21, 2024 1:00 am</time>.</p>
+                <p class="post-paragraph">Its was a busy afternoon at one of Reesor Farm Market’s strawberry fields on Thursday.
+                    Normally, owner John Reesor sees about 1,800 customers a week rushing to his Markham, Ont., farm to pick strawberries.
+                    But over the weekend, he got 1,200 in one single day.“People are excited,” he said.
+                    In the spring, Reesor noticed something unfolding in the greenery at his fields.
+                    “We started picking strawberries 10 days earlier than we were last year,” the farmer told Global News.
+                    “This is probably the earliest harvest season we’ve seen on record.”
+                    </p>
+                <p class="post-paragraph">The mild spring and the ongoing heat wave have been pushing strawberries to fruition quick. If they’re not picked fast enough, they could be at risk of spoiling.
+                    “The downside to it is that our season will probably end early. We usually like to have strawberries ready for our Canada Day long weekend.”
+                    That — plus customers wanting to spend less time at his farm, away from the scorching sun.
+                </p>
+                <p class="post-paragraph">Summer came to a sweltering start in parts of Canada — before the season was even set to begin.
+                    The season officially starts on June 21.
+                    Yet, a heat dome descending on Central and Eastern Canada the past few days has sent the mercury soaring — with humidex values nearing 45 C in many communities.
+                </p>
+                <p class="post-paragraph last-paragraph">It’s a doubled-edged sword on both farm products and essential labour.
+                    “If its too hot for someone to go out in the field to harvest, that results in crop loss,” said Hannah Kaya, a farm worker organizer at National Farmers Union.
+                    More importantly, extreme heat can result in loss of life — numbers that are more documented in the United States, but sometimes neglected in Canada, said Kaya.
+                    “When the temperatures are reaching 45 degrees with the humidex, it becomes a health and safety concern.”
+                    In some provinces, said Kaya, it seems farmers are left to bear the brunt of a warming planet.
+                    “Ontario doesn’t currently have occupational health and safety regulations that specifically address heat stress. 
+                    So that means that employers are left on their own to determine what is the best safety protocol for their farm.”
+                </p>
+            </div>
+        </article>
+    </main>
+
+
+
+
+
+
+    <footer class="main-footer">
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+        <hr class="footer-line">
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+</body>
+</html>
